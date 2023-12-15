@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,900;1,100&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color:#101010;
+    font-size:1rem;
+}
+
+body{
+    background-image:url("../img/bg-filmes.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center center;
+}
+
+button{
+    padding:10px 20px;
+    border-radius:5px;
+    border:none;
+    
+    font-weight:700;
+    font-size:1rem;
+    background:#B81414;
+    color:#fff;
+}
+
+button:hover{
+    background:#EB1A1A;
+    cursor:pointer;
+}
+
+.button-voltar{
+    background-color:#fff;
+    margin:20px auto;
+    align-self:center;
+    display:flex;
+}
+
+.container{
+    height:100vh;
+    max-width:1140px;
+    margin:0 auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   
+}
+
+.container__wrap{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto 0;
+}
+
+
+.box-aluguel{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:space;
+
+    background:gray;
+    height:500px;
+    min-width:500px;
+    border-radius:10px;
+}
+
+.title-box{
+    display:flex;
+    align-self:center;
+    flex-direction:column;
+    text-align:center;
+    gap:10px;
+    margin-bottom:80px;
+}
+
+.title{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.box-buttons{
+    align-self:center;
+    padding:25px;
+}
+
+
+/*Quem Somos */
+
+
+.container-iframe{
+    background:#B81414;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.container-iframe iframe{
+    height:660px;
+    width:100%;
+    font-size:1rem;
+    padding:25px;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-size:1rem;
+    font-weight:400;
+}
+
+
+
+.iframe-content{
+    width:100%;
+    padding:20px;
+    background:#B81414;
+    margin:0 auto;
+}
+
+.iframe-content img {
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-top: 20px;
+}
+
+
+fieldset{
+    max-width:400px;
+    margin:0 auto;
+    color:#fff!important;
+    padding:25px;
+    border-radius:5px;
+}
+
+form{
+    border:none;
+    text-align:left;
+}
+
+input, textarea{
+  width:400px;
+  margin-bottom:15px;
+  padding:10px;
+  border-radius:5px;
+  border:none;
+}
+
+
+select{
+    padding:10px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+
+/*Biblioteca*/
+
+.biblioteca{
+    max-width:1140px;
+    margin:0 auto;
+}
+.biblioteca__wrap{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.biblioteca-box-filme{
+    padding:20px;
+    margin:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.button-biblioteca a{
+    color:#fff;
+    text-decoration:none;
+  
+}
+
+.button-biblioteca {
+    margin-top:20px;
+}
+
+.biblioteca-iframe iframe{
+    margin:0 auto;
+    display:flex;
+}

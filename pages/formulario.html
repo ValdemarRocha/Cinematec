@@ -1,0 +1,113 @@
+<html>
+<head>
+	<title> Registro</title>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/x-icon" href="../img/popcorn.png">
+	<link rel="stylesheet" href="../css/styles.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var availableTags = [
+      "Terror",
+      "Suspense",
+      "Infantil",
+      "Comédia",
+      "Drama",
+      "Aventura",
+      "Ação"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script>
+$( function() {
+  $( "input" ).checkboxradio();
+} );
+</script>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+
+</head>
+
+<body background="escritorio.jpg" class="iframe-content">
+
+
+<form name="Formulario" action="Form dados.html" method="POST" allign="center" width="70%">
+		<fieldset><legend>Dados Pessoais</legend>
+		Nome:<br><input type="text" name="nome" size="150"><br>
+		Endereço:<input type="text" name="endereço" size="150"><br>
+		E-mail:<input type="text" name="email" size="150"><br>
+		<p>Data de Nascimento: <input type="text" id="datepicker"></p>
+		</label><br>
+
+		<fieldset>
+			<legend> Sexo: </legend>
+			<label for="radio-1">Masculino</label>
+			<input type="radio" name="radio-1" id="radio-1">
+			<label for="radio-2">Feminino</label>
+			<input type="radio" name="radio-1" id="radio-2">
+			<label for="radio-3">Outro</label>
+			<input type="radio" name="radio-1" id="radio-3">
+			<label for="radio-4">Não quero informar</label>
+			<input type="radio" name="radio-1" id="radio-4">
+		  </fieldset>
+
+		  
+		Faixa etária:
+			<select label="Faixa">
+			<option value="L">Livre para todos os públicos</option>
+			<option value="10">Maiores de 10 anos</option>
+			<option value="12">Maiores de 12 anos</option>
+			<option value="14">Maiores de 14 anos</option>
+			<option value="16">Maiores de 16 anos</option>
+			<option value="18">Maiores de 18 anos</option>
+			</select><br>
+
+
+			<div class="ui-widget">
+				<label for="tags">Gênero do filme: </label>
+				<input id="tags">
+			  </div>
+
+
+			  <fieldset>
+				<legend>Filmes disponíveis: </legend>
+				<label for="checkbox-1">Mario Bros o filme</label>
+				<input type="checkbox" name="checkbox-1" id="checkbox-1">
+				<label for="checkbox-2">Elementos</label>
+				<input type="checkbox" name="checkbox-2" id="checkbox-2">
+				<label for="checkbox-3">Gigante de Aço</label>
+				<input type="checkbox" name="checkbox-3" id="checkbox-3">
+				<label for="checkbox-4"> Velozes e Furiosos 9</label>
+				<input type="checkbox" name="checkbox-4" id="checkbox-4">
+				<label for="checkbox-5">Gato de Botas 2</label>
+				<input type="checkbox" name="checkbox-4" id="checkbox-5">
+			  </fieldset> <br>
+			
+	<form name="frmfilmes" action="Form dados.html" method="POST" allign="center" width="70%">
+		<input type="submit" value="gravar">
+		<input type="reset" value="limpar">
+</form>
+	<button class="button-voltar"> <a href="../Alugamento-de- filmes.html"> Voltar ao Inicio </a></button>
+</body>
+</html>
